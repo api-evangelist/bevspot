@@ -1,8 +1,14 @@
 aid: bevspot
 name: BevSpot
-description: 'BevSpot is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'BevSpot is a Boston-based food and beverage inventory management platform
+  for restaurants, bars, and hospitality groups. The web application streamlines back-of-house
+  operations including inventory counting, ordering, invoice management, recipe and menu
+  costing, and sales-driven analytics. BevSpot ingests point-of-sale data through integrations
+  with more than a dozen POS systems (Toast, Square, Clover, Lightspeed, SpotOn, NCR Aloha,
+  Upserve, Brink, Lavu, and others), plus accounting and vendor connections (QuickBooks,
+  Microsoft Dynamics GP, Ottimate, Fintech, US Foods, Sysco). It is a portfolio company of
+  Bain Capital Ventures. BevSpot does not currently publish a public developer API, SDK, or
+  developer portal; this profile captures its public web, commercial, and security surface.'
 url: https://raw.githubusercontent.com/api-evangelist/bevspot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,31 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://bevspot.com/wp-content/uploads/2020/05/cropped-favicon-192x192.png
 tags:
 - Company
 - Ai Apps
+- Restaurant
+- Hospitality
+- Inventory Management
+- Food And Beverage
+- Point Of Sale
+- Analytics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bevspot-domain-security.yml
 - type: Website
   url: https://bevspot.com/
+- type: Blog
+  url: https://bevspot.com/blog/
+- type: Pricing
+  url: https://bevspot.com/plans-pricing/
+- type: Support
+  url: https://bevspot.elevio.help/en
+- type: TermsOfService
+  url: https://bevspot.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://bevspot.com/privacy-policy/
+- type: SignUp
+  url: https://app.bevspot.com/auth/signup
+- type: Login
+  url: https://app.bevspot.com/auth/
+- type: Integrations
+  url: https://bevspot.com/integrations/
+- type: GitHubOrganization
+  url: https://github.com/bevspot
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
